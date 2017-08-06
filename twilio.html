@@ -1,0 +1,9 @@
+<?php
+
+$datetime = date('m-d-Y--H:i:s');
+$call=$_GET['CallDuration'];
+
+header("Location: http://www.google-analytics.com/collect?v=1&tid=UA-54141672-1&cid=123&t=event&ec=Contact&ea=Call&el=$datetime&ev=$call");
+exit;
+
+?>
